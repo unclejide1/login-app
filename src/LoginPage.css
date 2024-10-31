@@ -1,0 +1,254 @@
+/* src/LoginPage.css
+body, html {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffcc99, #ffffff),
+    url('/src/assets/background.jpg') no-repeat center center/cover;
+    height: 100%;
+    background: url('/src/assets/background.png') no-repeat center center/cover;
+  }
+  
+  .login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+   
+  }
+  
+  .header h1 {
+    font-weight: bold;
+  }
+  
+  .header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .balloons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .balloon {
+    width: 50px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  
+  .red-balloon {
+    background: linear-gradient(to bottom, #ff6347, #ff4500);
+    margin-right: 10px;
+  }
+  
+  .blue-balloon {
+    background: linear-gradient(to bottom, #4682b4, #1e90ff);
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .enroll-button, .sign-on-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .enroll-button {
+    background-color: #007aff;
+    color: #fff;
+  }
+  
+  .sign-on-button {
+    background-color: #ddd;
+    color: #888;
+  }
+  
+  .sign-on-button:disabled {
+    cursor: not-allowed;
+  }
+  
+  .forgot-link {
+    color: #007aff;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .footer-option {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 35%;
+  }
+  
+  .footer-option span {
+    display: block;
+    font-weight: bold;
+    color: #007aff;
+  }
+
+
+.card-section {
+    display: flex;
+    gap: 20px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .card {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #ffcc99;
+  }
+  
+  .card-content h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: #333;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #666;
+  }
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #ffcc99, #ffffff),
+    url('/src/assets/background.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .login-container {
+    max-width: 400px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .login-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .enroll-button,
+  .sign-on-button {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .enroll-button {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+  }
+  
+  .sign-on-button {
+    background-color: #f0f0f0;
+    color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  .forgot-link {
+    font-size: 14px;
+    color: #5c2d91;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+  }
+   */
