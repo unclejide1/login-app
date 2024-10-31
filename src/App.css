@@ -1,13 +1,13 @@
 /* App.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-body, html {
+/* body, html {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  /* background: linear-gradient(to bottom, #ffcc99, #ffffff),
+   background: linear-gradient(to bottom, #ffcc99, #ffffff),
   url('/src/assets/background.jpg') no-repeat center center/cover;
   height: 100%;
-  background: url('/src/assets/background.png') no-repeat center center/cover; */
+  background: url('/src/assets/background.png') no-repeat center center/cover;
 }
 
 * {
@@ -23,10 +23,10 @@ body, html {
   align-items: center;
   justify-content: center;
   background:  url('/src/assets/background2.jpeg') no-repeat center center/cover;
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-position: center center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
   color: #333;
   min-height: 100vh;
   font-family: 'Roboto';
@@ -133,7 +133,264 @@ body, html {
 .card-content p {
   font-size: 14px;
   color: #666;
+} */
+
+/* App.css */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.header {
+  width: 100%;
+  background-color: #d32f2f;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+}
+
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  color: #fff;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.login-container {
+  margin-top: 80px;
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-container h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.save-username {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.save-username label {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.secure-text {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.sign-on-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #e0e0e0;
+  color: #a0a0a0;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
+
+.forgot-link {
+  display: inline-block;
+  font-size: 14px;
+  color: #d32f2f;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.investment-info {
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+  margin-top: 20px;
+  padding: 10px;
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.investment-info ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  margin-top: 8px;
+} */
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 20px; */
+}
+
+.header-bar {
+  width: 100%;
+  padding: 10px;
+  background-color: #c8102e;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-bar h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.login-card {
+  width: 90%;
+  max-width: 400px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.login-card h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+form label {
+  font-size: 16px;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+.password-container .icon {
+  font-size: 18px;
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.options label {
+  font-size: 14px;
+  color: #666;
+  margin-left: 5px;
+}
+
+.help-text {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ddd;
+  color: #666;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.forgot-link {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #0071c2;
+  text-align: center;
+}
+
+.disclaimer {
+  margin-top: 20px;
+  width: 90%;
+  max-width: 400px;
+  font-size: 14px;
+  color: #333;
+}
+
+.disclaimer ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.disclaimer ul li {
+  font-size: 12px;
+  color: #333;
+}
+
 
 .modal-overlay {
   position: fixed;
