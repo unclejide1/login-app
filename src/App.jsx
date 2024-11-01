@@ -123,7 +123,7 @@ function App() {
       </header>
       <div class="KeyLine__keyLine___CunYI"></div>
       <div className="login-card">
-        <h2>Good afternoon</h2>
+        <p className='greeting'>Good afternoon</p>
         <form onSubmit={(e) => e.preventDefault()}>
           {/* <label>Username</label> */}
           <input type="text" placeholder="Username" />

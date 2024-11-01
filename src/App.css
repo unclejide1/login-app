@@ -261,12 +261,9 @@
   margin-top: 8px;
 } */
 
-@font-face {
-  font-family: 'Clarendon';
-  src: url('./assets/Clarendon-Regular-Font.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:wght@100&display=swap');
+
 
 
 /* General Reset */
@@ -274,8 +271,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Clarendon', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
+
+
+
+
 
 .login-container {
   display: flex;
@@ -306,7 +307,7 @@
 }
 
 .header-bar h1 {
-  font-size: 24px;
+  font-size: 10px;
   margin: 0;
 }
 
@@ -320,7 +321,7 @@
   margin-top: 20px;
 }
 
-.login-card h2 {
+.login-card .greeting {
   font-size: 22px;
   margin-bottom: 20px;
   text-align: center;
