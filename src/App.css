@@ -263,7 +263,7 @@
 
 @font-face {
   font-family: 'Clarendon';
-  src: url('./assets//Clarendon-Regular-Font.ttf') format('truetype');
+  src: url('./assets/Clarendon-Regular-Font.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -292,6 +292,16 @@
   text-align: center;
   display: flex;
   justify-content: space-between;
+}
+
+.KeyLine__keyLine___CunYI {
+  background-color: #fcc60a;
+  height: 4px;
+  width: 100%;
+}
+
+.well{
+  padding-left: 85px;
 }
 
 .header-bar h1 {
@@ -327,9 +337,12 @@ form input[type="password"] {
   padding: 10px;
   margin-top: 5px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #9c9191;
   border-radius: 18px;
-  font-size: 16px;
+  font-size: 19px;
+  
+    line-height: 28px;
+    
 }
 
 .password-container {
@@ -347,12 +360,50 @@ form input[type="password"] {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  padding-bottom: .5rem;
+    padding-right: .5rem;
+    padding-top: .5rem;
+}
+
+/* Hide the native checkbox */
+.options input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the checkbox icon */
+.checkbox-icon {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Hide the checkmark by default */
+.checkbox-icon .checkmark {
+  display: none;
+}
+
+/* Show the checkmark when the checkbox is checked */
+.options input[type="checkbox"]:checked + .checkbox-icon .checkmark {
+  display: inline;
+}
+
+/* Optionally, add hover effects or any other styles */
+.checkbox-icon:hover {
+  opacity: 0.8;
 }
 
 .options label {
   font-size: 14px;
   color: #666;
   margin-left: 5px;
+}
+
+.ok {
+  stroke: #787070 important;
+  fill: #fff;
+  transition: fill 175ms, stroke 175ms;
 }
 
 .help-text {
@@ -374,10 +425,14 @@ button {
 
 .forgot-link {
   display: block;
-  margin-top: 15px;
+  margin-top: 35px;
   font-size: 14px;
   color: #0071c2;
   text-align: center;
+}
+
+.HamburgerIcon__icon___DEc1M {
+  fill: #fff;
 }
 
 .disclaimer {
