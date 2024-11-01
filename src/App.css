@@ -307,7 +307,7 @@
 }
 
 .header-bar h1 {
-  font-size: 10px;
+  font-size: 20px;
   margin: 0;
 }
 
@@ -326,6 +326,14 @@
   margin-bottom: 20px;
   text-align: center;
   color: #333;
+}
+
+.pad{
+  margin-right: 8px;
+}
+
+.WFLink__text___Ia8fg{
+  color: #5a469b;
 }
 
 form label {
